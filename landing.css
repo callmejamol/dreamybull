@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: orange; /* Fallback color in case the image doesn't load */
+    overflow: hidden; /* Prevents scroll caused by rotation */
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+}
+
+.donut {
+    width: 35%;
+    height: 35%;
+    position: relative;
+    top: 30px;
+    right: 10px; /* Adjust this as needed */
+    float: right;
+    animation: spin 3s linear infinite;
+}
+
+.button {
+    padding: 1%;
+    font-size: 400%;
+    text-align: center;
+    color: white; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 10px; /* Optional border radius */
+    cursor: pointer;
+    position: relative;
+    z-index: 1; /* Ensures button stays on top if there are overlapping elements */
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    color: azure;
+    font-size: 200%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Spin Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
